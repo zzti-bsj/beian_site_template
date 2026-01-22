@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bsj's Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="left">
+            <div class="brand">
+                <span class="logo"></span>
+                <h1 class="site-name">Bsj's Blog</h1>
+                <p class="site-desc">个人技术博客，记录学习点滴</p>
+                <p class="site-detail">分享前端开发、后端技术、编程心得与实战经验，</p>
+                <p class="site-detail">在代码的世界里探索，在技术的道路上成长。</p>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="form">
+                <h1>欢迎回来</h1>
+                <p class="subtitle">请登录您的账户</p>
+
+                <form>
+                    <div class="field">
+                        <label>邮箱</label>
+                        <input type="email" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="field">
+                        <label>密码</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+
+                    <div class="actions">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span>记住我</span>
+                        </label>
+                        <a href="#">忘记密码？</a>
+                    </div>
+
+                    <button type="submit">登录</button>
+                </form>
+
+                <p class="footer">
+                    还没有账户？<a href="#">立即注册</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="icp-footer">
+        <p class="copyright">&copy; <span id="year"></span> Bsj's Blog. All Rights Reserved.</p>
+        <a href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2023009302号</a>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

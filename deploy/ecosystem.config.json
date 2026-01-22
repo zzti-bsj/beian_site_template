@@ -1,0 +1,21 @@
+{
+  "apps": [
+    {
+      "name": "filing-site",
+      "script": "npx",
+      "args": "http-server . -p 8080 -c 86400",
+      "cwd": "/path/to/备案专用网站",
+      "instances": 1,
+      "exec_mode": "fork",
+      "watch": false,
+      "max_memory_restart": "200M",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "error_file": "/var/log/pm2/filing-site-error.log",
+      "out_file": "/var/log/pm2/filing-site-out.log",
+      "log_file": "/var/log/pm2/filing-site.log",
+      "time": true
+    }
+  ]
+}
