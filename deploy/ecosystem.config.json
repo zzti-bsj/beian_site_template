@@ -3,7 +3,7 @@
     {
       "name": "filing-site",
       "script": "npx",
-      "args": "http-server . -p 8080 -c 86400",
+      "args": "http-server . -p 80 -c 86400",
       "cwd": "/path/to/备案专用网站",
       "instances": 1,
       "exec_mode": "fork",
